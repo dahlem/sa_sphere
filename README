@@ -1,0 +1,23 @@
+README
+
+Put points evenly spaced across a sphere, given random or clustered
+configurations using simulated annealing. The code is implemented in C
+and no external libraries are used. Type "make" to compile the
+code. The command-line parameters are:
+
+annealPoints - Uniformly distribute points on a sphere.
+ -d : Damping factor for the annealing process.
+ -i : Number of iterations.
+ -n : Number of points.
+ -r : Seed for the random number generator.
+ -t : Initial value for the temperature.
+ -u : Flag to indicate uniform initial configuration.
+ -? : This help message.
+ -h : This help message.
+
+The results are put into a timestamped log directory and contains:
+
+ - param.log   : the parameters of the simulation
+ - sim.log     : the simulated annealing progress
+ - initial.log : the initial points in x,y,z
+ - best.log    : the best configuration found
